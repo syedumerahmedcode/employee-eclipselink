@@ -2,5 +2,12 @@
 <persistence version="2.2" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
 	<persistence-unit name="employee">
 		<class>com.umer.entity.Employee</class>
+		<properties>
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+		<!-- 	<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/employees?useSSL=false&serverTimezone=UTC&useLegacyDatetimeCode=false"/>	-->
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/employees?useSSL=false"/>
+			<property name="javax.persistence.jdbc.user" value="padmin"/>
+			<property name="javax.persistence.jdbc.password" value="Windo@1234"/>
+		</properties>
 	</persistence-unit>
 </persistence>

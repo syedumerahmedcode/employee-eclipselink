@@ -9,61 +9,37 @@ import javax.persistence.*;
  *
  */
 @Entity
-@Table(name = "emp")
+@Table(name = "employee")
 public class Employee implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
 	
 
 	@Id
-	@Column(name = "ENO")
-	private int eno;
+	@Column(name = "id")
+	private int id;
 	
-	@Column(name = "ENAME")
-	private String ename;
+	@Column(name = "first_name")
+	private String first_name;
 	
-	@Column(name = "ESAL")
-	private float esal;
+	@Column(name = "last_name")
+	private String last_name;
 	
-	@Column(name = "EADDR")
-	private String eaddr;
+	@Column(name = "username")
+	private String username;
 	
+	@Column(name = "password")
+	private String password;
 	
+	@Column(name = "address")
+	private String address;
+	
+	@Column(name = "contact")
+	private String contact;
 
 	public Employee() {
 		super();
 	}
 
-	public int getEno() {
-		return this.eno;
-	}
-
-	public void setEno(int eno) {
-		this.eno = eno;
-	}
-
-	public String getEname() {
-		return this.ename;
-	}
-
-	public void setEname(String ename) {
-		this.ename = ename;
-	}
-
-	public float getEsal() {
-		return this.esal;
-	}
-
-	public void setEsal(float esal) {
-		this.esal = esal;
-	}
-
-	public String getEaddr() {
-		return this.eaddr;
-	}
-
-	public void setEaddr(String eaddr) {
-		this.eaddr = eaddr;
-	}
 
 }

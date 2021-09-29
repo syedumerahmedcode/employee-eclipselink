@@ -16,7 +16,24 @@ public class TestService {
 		EntityManager entityManager=entityManagerFactory.createEntityManager(); 
 		
 		EntityTransaction entityTransaction=entityManager.getTransaction();
+		
+		int employeeId = createAnEmployee(entityManager, entityTransaction);
+		System.out.println("Employee added successfully");
+		
+		findExistingEmployees(entityManager, employeeId);
+		
+		
+		updateAnEmployee(entityManager, entityTransaction, employeeId);
+		
+		removeAnEmployee(entityManager, entityTransaction, employeeId);
+		
+		
+		entityManager.close();
+	}
+
+	private static int createAnEmployee(EntityManager entityManager, EntityTransaction entityTransaction) {
 		entityTransaction.begin();
+		
 		
 		int employeeId=2;
 		Employee employee = createEmployeeToStoreInTheDatabase(employeeId);
@@ -24,15 +41,29 @@ public class TestService {
 		entityManager.persist(employee);
 		
 		entityTransaction.commit();
-		System.out.println("Employee added successfully");
-		
-		findExistingEmployees(entityManager, employeeId);
-		
-		entityManager.close();
+		return employeeId;
+	}
+
+	private static void removeAnEmployee(EntityManager entityManager, EntityTransaction entityTransaction,
+			int employeeId) {
+		Employee employee;
+		entityTransaction.begin();
+		employee=findAnExistingEmployee(entityManager, employeeId);
+		entityManager.remove(employee);
+		entityTransaction.commit();
+	}
+
+	private static void updateAnEmployee(EntityManager entityManager, EntityTransaction entityTransaction,
+			int employeeId) {
+		Employee employee;
+		entityTransaction.begin();
+		employee=findAnExistingEmployee(entityManager, employeeId);
+		employee.setAddress("new Address");
+		entityTransaction.commit();
 	}
 
 	private static void findExistingEmployees(EntityManager entityManager, int id) {
-		Employee existingEmployee=entityManager.find(Employee.class, id);
+		Employee existingEmployee = findAnExistingEmployee(entityManager, id);
 		System.out.println("Found the following details");
 		System.out.println("----------------------------");
 		System.out.println("Employee number                :" + existingEmployee.getId());
@@ -43,6 +74,11 @@ public class TestService {
 		System.out.println("Employee Address               :" + existingEmployee.getAddress());
 		System.out.println("Employee Contact               :" + existingEmployee.getContact());		
 		System.out.println("----------------------------");
+	}
+
+	private static Employee findAnExistingEmployee(EntityManager entityManager, int id) {
+		Employee existingEmployee=entityManager.find(Employee.class, id);
+		return existingEmployee;
 	}
 
 	private static Employee createEmployeeToStoreInTheDatabase(int id) {

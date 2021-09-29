@@ -18,14 +18,21 @@ public class TestService {
 		EntityTransaction entityTransaction=entityManager.getTransaction();
 		entityTransaction.begin();
 		
-		Employee employee = createEmployeeToStoreInTheDatabase();
+		int employeeId=2;
+		Employee employee = createEmployeeToStoreInTheDatabase(employeeId);
 		
 		entityManager.persist(employee);
 		
 		entityTransaction.commit();
 		System.out.println("Employee added successfully");
 		
-		Employee existingEmployee=entityManager.find(Employee.class, 2);
+		findExistingEmployees(entityManager, employeeId);
+		
+		entityManager.close();
+	}
+
+	private static void findExistingEmployees(EntityManager entityManager, int id) {
+		Employee existingEmployee=entityManager.find(Employee.class, id);
 		System.out.println("Found the following details");
 		System.out.println("----------------------------");
 		System.out.println("Employee number                :" + existingEmployee.getId());
@@ -34,16 +41,13 @@ public class TestService {
 		System.out.println("Employee username              :" + existingEmployee.getUsername());
 		System.out.println("Employee password              :" + existingEmployee.getPassword());
 		System.out.println("Employee Address               :" + existingEmployee.getAddress());
-		System.out.println("Employee Contact               :" + existingEmployee.getContact());
-		
+		System.out.println("Employee Contact               :" + existingEmployee.getContact());		
 		System.out.println("----------------------------");
-		
-		entityManager.close();
 	}
 
-	private static Employee createEmployeeToStoreInTheDatabase() {
+	private static Employee createEmployeeToStoreInTheDatabase(int id) {
 		Employee employee=new Employee();
-		employee.setId(2);
+		employee.setId(id);
 		employee.setFirst_name("firstName");
 		employee.setLast_name("lastName");
 		employee.setUsername("username");

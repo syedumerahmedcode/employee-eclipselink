@@ -24,6 +24,20 @@ public class TestService {
 		
 		entityTransaction.commit();
 		System.out.println("Employee added successfully");
+		
+		Employee existingEmployee=entityManager.find(Employee.class, 2);
+		System.out.println("Found the following details");
+		System.out.println("----------------------------");
+		System.out.println("Employee number                :" + existingEmployee.getId());
+		System.out.println("Employee First_name            :" + existingEmployee.getFirst_name());
+		System.out.println("Employee Last_name             :" + existingEmployee.getLast_name());
+		System.out.println("Employee username              :" + existingEmployee.getUsername());
+		System.out.println("Employee password              :" + existingEmployee.getPassword());
+		System.out.println("Employee Address               :" + existingEmployee.getAddress());
+		System.out.println("Employee Contact               :" + existingEmployee.getContact());
+		
+		System.out.println("----------------------------");
+		
 		entityManager.close();
 	}
 

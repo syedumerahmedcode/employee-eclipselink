@@ -7,11 +7,11 @@ import javax.persistence.Persistence;
 
 import com.umer.entity.Employee;
 
-public class TestService {
+public class EmployeeService {
 
 	private static final String PERSISTENCE_UNIT_NAME = "employee";
 
-	public static void main(String[] args) throws Exception {
+	public static void main(String[] args) {
 		EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory(PERSISTENCE_UNIT_NAME);
 		EntityManager entityManager = entityManagerFactory.createEntityManager();
 

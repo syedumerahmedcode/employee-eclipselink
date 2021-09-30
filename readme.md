@@ -78,7 +78,7 @@ PRIMARY KEY (`id`)
 ## References
 
 - [1](https://www.youtube.com/watch?v=o5YvVtfZhe8):  JPA with Eclipse Link Implementation(Youtube)
-- To be added further.
+- [2](https://www.java-forum.org/thema/could-not-find-main-class-problem.130986/): "Could not find Main Class" Problem
 
 
 

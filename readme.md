@@ -64,7 +64,7 @@ PRIMARY KEY (`id`)
 - Java 11
 - [JavaEE](https://www.oracle.com/java/technologies/java-ee-glance.html): Java Platform, Enterprise Edition (Java EE) is the standard in community-driven enterprise software. Java EE is developed using the Java Community Process, with contributions from industry experts, commercial and open source organizations, Java User Groups, and countless individuals. Each release integrates new features that align with industry needs, improves application portability, and increases developer productivity.
 - [MySQL](https://www.mysql.com/): MySQL is an open-source relational database management system (RDBMS) and MySQL has stand-alone clients that allow users to interact directly with a MySQL database using SQL, but more often, MySQL is used with other programs to implement applications that need relational database capability.
-- Further points will be addded.
+- [EclipseLink](https://www.eclipse.org/eclipselink/): Comprehensive open-source Java persistence solution addressing relational, XML, and database web services.
 
 ## Prerequisities
 

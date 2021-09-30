@@ -12,34 +12,31 @@ public class TestService {
 	private static final String PERSISTENCE_UNIT_NAME = "employee";
 
 	public static void main(String[] args) throws Exception {
-		EntityManagerFactory entityManagerFactory=Persistence.createEntityManagerFactory(PERSISTENCE_UNIT_NAME);
-		EntityManager entityManager=entityManagerFactory.createEntityManager(); 
-		
-		EntityTransaction entityTransaction=entityManager.getTransaction();
-		
+		EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory(PERSISTENCE_UNIT_NAME);
+		EntityManager entityManager = entityManagerFactory.createEntityManager();
+
+		EntityTransaction entityTransaction = entityManager.getTransaction();
+
 		int employeeId = createAnEmployee(entityManager, entityTransaction);
 		System.out.println("Employee added successfully");
-		
+
 		findExistingEmployees(entityManager, employeeId);
-		
-		
+
 		updateAnEmployee(entityManager, entityTransaction, employeeId);
-		
+
 		removeAnEmployee(entityManager, entityTransaction, employeeId);
-		
-		
+
 		entityManager.close();
 	}
 
 	private static int createAnEmployee(EntityManager entityManager, EntityTransaction entityTransaction) {
 		entityTransaction.begin();
-		
-		
-		int employeeId=2;
+
+		int employeeId = 2;
 		Employee employee = createEmployeeToStoreInTheDatabase(employeeId);
-		
+
 		entityManager.persist(employee);
-		
+
 		entityTransaction.commit();
 		return employeeId;
 	}
@@ -48,7 +45,7 @@ public class TestService {
 			int employeeId) {
 		Employee employee;
 		entityTransaction.begin();
-		employee=findAnExistingEmployee(entityManager, employeeId);
+		employee = findAnExistingEmployee(entityManager, employeeId);
 		entityManager.remove(employee);
 		entityTransaction.commit();
 	}
@@ -57,7 +54,7 @@ public class TestService {
 			int employeeId) {
 		Employee employee;
 		entityTransaction.begin();
-		employee=findAnExistingEmployee(entityManager, employeeId);
+		employee = findAnExistingEmployee(entityManager, employeeId);
 		employee.setAddress("new Address");
 		entityTransaction.commit();
 	}
@@ -72,17 +69,17 @@ public class TestService {
 		System.out.println("Employee username              :" + existingEmployee.getUsername());
 		System.out.println("Employee password              :" + existingEmployee.getPassword());
 		System.out.println("Employee Address               :" + existingEmployee.getAddress());
-		System.out.println("Employee Contact               :" + existingEmployee.getContact());		
+		System.out.println("Employee Contact               :" + existingEmployee.getContact());
 		System.out.println("----------------------------");
 	}
 
 	private static Employee findAnExistingEmployee(EntityManager entityManager, int id) {
-		Employee existingEmployee=entityManager.find(Employee.class, id);
+		Employee existingEmployee = entityManager.find(Employee.class, id);
 		return existingEmployee;
 	}
 
 	private static Employee createEmployeeToStoreInTheDatabase(int id) {
-		Employee employee=new Employee();
+		Employee employee = new Employee();
 		employee.setId(id);
 		employee.setFirst_name("firstName");
 		employee.setLast_name("lastName");

@@ -4,6 +4,7 @@
 - [Introduction](#introduction)
 - [Out Of Scope](#out-of-scope)
 - [Explanation EclipseLink](#explanation-eclipselink)
+- [Explanation EntityManager](#explanation-entitymanager)
 - [Explanation Database](#explanation-database)
 - [Explanation System Design](#explanation-system-design)
 - [Explanation Other important Points](#explanation-other-important-points)
@@ -27,11 +28,15 @@
 
 - To be defined. 
 
+## Explanation EntityManager
+
+- To be defined. 
+
 
  
 ## Explanation Database
 
-For database, MySql is used however, one can choose any other database. Since the focus is on understanding the dao pattern, one only table is created inside the database which keeps the records of the employees. The fields are: _id_, _first name_, _last name_, _username_, _password_, _address_ and _contact_. The primary key is _id_.
+For database, MySql is used however, one can choose any other database. Since the focus is on understanding the Eclipselink in general and EntityManager in particular, one only table is created inside the database which keeps the records of the employees. The fields are: _id_, _first name_, _last name_, _username_, _password_, _address_ and _contact_. The primary key is _id_.
 
 ```sql
 CREATE TABLE `employees`.`employee` (

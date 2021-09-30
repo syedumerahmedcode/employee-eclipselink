@@ -79,14 +79,14 @@ PRIMARY KEY (`id`)
 
 - [1](https://www.youtube.com/watch?v=o5YvVtfZhe8):  JPA with Eclipse Link Implementation(Youtube)
 - [2](https://www.java-forum.org/thema/could-not-find-main-class-problem.130986/): "Could not find Main Class" Problem
-- [3](https://www.eclipse.org/eclipselink/documentation/3.0/concepts/toc.htm): Understanding EclipseLink, 3.0
-- [4](https://www.eclipse.org/eclipselink/documentation/3.0/solutions/toc.htm): EclipseLink Solutions Guide for EclipseLink Release 3.0
-- [5](https://www.eclipse.org/eclipselink/documentation/3.0/jpa/extensions/toc.htm): Jakarta Persistence API (JPA) Extensions Reference for EclipseLink, Release 3.0
-- [6](https://www.eclipse.org/eclipselink/documentation/3.0/moxy/toc.htm): Developing JAXB Applications Using EclipseLink MOXy, Release 3.0
-- [7](https://www.eclipse.org/eclipselink/documentation/3.0/concepts/nosql.htm): Understanding EclipseLink, 3.0
+- [3](https://www.eclipse.org/eclipselink/documentation/3.0/concepts/toc.htm): Understanding EclipseLink, 3.0(Official Documentation)
+- [4](https://www.eclipse.org/eclipselink/documentation/3.0/solutions/toc.htm): EclipseLink Solutions Guide for EclipseLink Release 3.0(Official Documentation)
+- [5](https://www.eclipse.org/eclipselink/documentation/3.0/jpa/extensions/toc.htm): Jakarta Persistence API (JPA) Extensions Reference for EclipseLink, Release 3.0(Official Documentation)
+- [6](https://www.eclipse.org/eclipselink/documentation/3.0/moxy/toc.htm): Developing JAXB Applications Using EclipseLink MOXy, Release 3.0(Official Documentation)
+- [7](https://www.eclipse.org/eclipselink/documentation/3.0/concepts/nosql.htm): Understanding EclipseLink, 3.0(Official Documentation)
 - [8](https://www.eclipse.org/eclipselink/documentation/3.0/dbws/toc.htm): Developing Persistence Architectures Using EclipseLink Database Web Services
-Release 3.0
-- [9](https://wiki.eclipse.org/EclipseLink/Examples/JPA/EMAPI): This document demonstrates EclipseLink’s support for the JPA specification, specifically the usage of the EntityManager API 
+Release 3.0(Official Documentation)
+- [9](https://wiki.eclipse.org/EclipseLink/Examples/JPA/EMAPI): This document demonstrates EclipseLink’s support for the JPA specification, specifically the usage of the EntityManager API(Official Documentation with examples)
 
 
 ## Contact Information

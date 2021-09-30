@@ -17,7 +17,7 @@
 
 ## Introduction
 
-- To be defined.
+This project contains an application for employee registration which uses JavaEE and uses EclipseLink to register information of the employee in the database. The main focus of the project is understand what EclipseLink is and how to use it within JavaEE eco system. The main emphasis is given on _EntityManagerFactory_  and _EntityManager_ interface as well as _EntityTransaction_ and how to use it. For this purpose, a simple JPA Project is created.
 
 ## Out Of Scope
 

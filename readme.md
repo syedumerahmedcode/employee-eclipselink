@@ -92,7 +92,7 @@ PRIMARY KEY (`id`)
 - [8](https://www.eclipse.org/eclipselink/documentation/3.0/dbws/toc.htm): Developing Persistence Architectures Using EclipseLink Database Web Services
 Release 3.0 **(Official Documentation)**
 - [9](https://wiki.eclipse.org/EclipseLink/Examples/JPA/EMAPI): This document demonstrates EclipseLink’s support for the JPA specification, specifically the usage of the EntityManager API **(Official Documentation with examples)**
-
+- [10](https://wiki.eclipse.org/Introduction_to_EclipseLink_(ELUG)): Introduction to EclipseLink (ELUG)
 
 ## Contact Information
 

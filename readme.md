@@ -21,7 +21,7 @@ This project contains an application for employee registration which uses JavaEE
 
 ## Out Of Scope
 
-- To be defined.
+Since the idea of this project is to understand EclipseLink and specifically how EntityManager works, front-end is ignored. Similarly, no tests are written.  
 
 
 ## Explanation EclipseLink

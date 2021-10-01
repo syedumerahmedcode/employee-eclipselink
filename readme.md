@@ -26,7 +26,9 @@ Since the idea of this project is to understand EclipseLink and specifically how
 
 ## Explanation EclipseLink
 
-- To be defined. 
+Eclipselink builds high performance applications that store persistent object-oriented data in a relational database. It is used to design, implement, deploy and optimize an advanced object-persistant and object.transformation layer that supports a variety of data sources and formats, including the following: 
+
+- To be defined.
 
 ## Explanation EntityManager
 

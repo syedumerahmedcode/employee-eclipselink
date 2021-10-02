@@ -28,7 +28,14 @@ Since the idea of this project is to understand EclipseLink and specifically how
 
 Eclipselink builds high performance applications that store persistent object-oriented data in a relational database. It is used to design, implement, deploy and optimize an advanced object-persistant and object.transformation layer that supports a variety of data sources and formats, including the following: 
 
-- To be defined.
+- Relational ---- for transactional persistence of Java Objects to a relational database  using JDBC
+- Object-Relational data type ---- for transactional persistence of java objects to special purpose data source representations optimized for storage in  object-relational data type databases such as Oracle Database, MySQL, Postgres, MS SQL Server etc.
+- Enterprise information system (EIS) ---for transactional persistence of Java objects to a nonrelational data source accessed using a Java EE Connector architecture (JCA) adapter, and any supported EIS record type, including indexed, mapped, or XML.
+- XML ---- for nontransactional, nonpersistent (in-memory) conversion between Java objects and XML Schema Document (XSD)-based XML documents using Java Architecture for XML Binding (JAXB).
+
+**EclipseLink Key Features**
+
+
 
 ## Explanation EntityManager
 

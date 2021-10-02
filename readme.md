@@ -35,7 +35,7 @@ Eclipselink builds high performance applications that store persistent object-or
 
 The following diagram depicts the Eclipselink Runtime Architecture:
 
-![EclipseLinkRuntimeArchitectureOnWhiteboard](https://github.com/syedumerahmedcode/employee-eclipselink/tree/master/src/main/resources/EclipseLinkRuntimeArchitecture.jpeg)
+![EclipseLinkRuntimeArchitectureOnWhiteboard](https://github.com/syedumerahmedcode/employee-eclipselink/tree/master/src/main/resources/EclipseLinkRuntimeArchitectureOnWhiteboard.jpeg)
 
 
 

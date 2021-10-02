@@ -82,7 +82,7 @@ PRIMARY KEY (`id`)
 ## Explanation Other Important Points
 
 - entityManagerFactory.createEntityManager()--->create entity manager. entityManager.getTransaction()---> creates transaction. entityTransaction.begin() ---> begins the transaction, CRUD operations are performed. entityTransaction.commit() commits the transaction. entityManager.close()---> ecloses the entity manager.
-- _<persistence-unit name="employee">_ defined in persistence.xml is referenced in the EmployeeService class.
+- <persistence-unit name="employee"> defined in persistence.xml is referenced in the EmployeeService class.
 - _jdbc.driver_, _jdbc.url_, _jdbc.user_ and _jdbc.password_ are defined in persistence.xml.
 
 - JPA Facet project ?

@@ -81,7 +81,7 @@ PRIMARY KEY (`id`)
  
 ## Explanation Other Important Points
 
-- entityManagerFactory.createEntityManager()--->create entity manager. entityManager.getTransaction()---> creates transaction. entityTransaction.begin() ---> begins the transaction, CRUD operations are performed. entityTransaction.commit() commits the transaction. entityManager.close()---> ecloses the entity manager.
+- entityManagerFactory.createEntityManager()--->create entity manager. entityManager.getTransaction()---> creates transaction. entityTransaction.begin() ---> begins the transaction, CRUD operations are performed. entityTransaction.commit() commits the transaction. entityManager.close()---> closes the entity manager.
 - 
 
 ```xml
@@ -90,8 +90,8 @@ PRIMARY KEY (`id`)
 defined in persistence.xml is referenced in the EmployeeService class(i.e. PERSISTENCE_UNIT_NAME) when calling EntityManagerFactory.
 - _jdbc.driver_, _jdbc.url_, _jdbc.user_ and _jdbc.password_ are defined in persistence.xml.
 
-- JPA Facet project ?
-- Problems with BuildPath ?
+- This is a JPA Facet project. JPA version used is 2.1. 
+- Problems with BuildPath: It may be that the project is not compiling correctly. In that case, please ensure that the Build path is correct. This is done by Opening  Project -->build path --> Configure BuildPath --> module Path == Appropriate JRE System and ClassPath == custom Eclipselink libraries which are downloaded and loaded in the project.
 
 
 
@@ -104,7 +104,7 @@ defined in persistence.xml is referenced in the EmployeeService class(i.e. PERSI
 
 ## Prerequisities
 
-- To be defined.
+- The database is already created with an employee table. If it is not present, please refer to the database section above to see how it can be organized.
 
 
 

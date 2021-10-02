@@ -110,6 +110,7 @@ PRIMARY KEY (`id`)
 Release 3.0 **(Official Documentation)**
 - [9](https://wiki.eclipse.org/EclipseLink/Examples/JPA/EMAPI): This document demonstrates EclipseLink’s support for the JPA specification, specifically the usage of the EntityManager API **(Official Documentation with examples)**
 - [10](https://wiki.eclipse.org/Introduction_to_EclipseLink_(ELUG)): Introduction to EclipseLink (ELUG)
+- [11](https://docs.oracle.com/javaee/7/api/javax/persistence/EntityManager.html): Entity Manger **(JavaDoc)**
 
 ## Contact Information
 

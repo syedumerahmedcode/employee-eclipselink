@@ -33,7 +33,9 @@ Eclipselink builds high performance applications that store persistent object-or
 - Enterprise information system (EIS) ---for transactional persistence of Java objects to a nonrelational data source accessed using a Java EE Connector architecture (JCA) adapter, and any supported EIS record type, including indexed, mapped, or XML.
 - XML ---- for nontransactional, nonpersistent (in-memory) conversion between Java objects and XML Schema Document (XSD)-based XML documents using Java Architecture for XML Binding (JAXB).
 
-**EclipseLink Key Features**
+The following diagram depicts the Eclipselink Runtime Architecture:
+
+![EclipseLinkRuntimeArchitectureOnWhiteboard](https://github.com/syedumerahmedcode/employee-eclipselink/src/main/resources/EclipseLinkRuntimeArchitecture.jpeg)
 
 
 

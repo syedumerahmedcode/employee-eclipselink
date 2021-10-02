@@ -49,6 +49,8 @@ An entity manager is used to interact with the persistence context. An entity ma
 
 A **Persistence Context** is a setg of entity instances in which there is a unique entity instance for any persistent entity identity. Within the persistence context, the entity instance and their life cycles are managed. 
 
+The **EntityTransaction** interface is used to control transactions on resource-local entity managers. The _EntityManager.getTransaction()_ method returns the EntityTransaction interface.
+
 
  
 ## Explanation Database

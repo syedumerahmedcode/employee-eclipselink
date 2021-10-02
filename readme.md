@@ -10,7 +10,6 @@
 - [Explanation Other important Points](#explanation-other-important-points)
 - [Technologies Used](#technologies-used)
 - [Prerequisities](#prerequisities)
-- [Commands](#commands)
 - [Contribution](#contribution)
 - [References](#references)
 - [Contact Information](#contact-information)
@@ -75,12 +74,19 @@ PRIMARY KEY (`id`)
 
 ## Explanation System Design
 
-- To be defined.
+- _com.umer.entity_ contains **Employee.java** class which is the entity implementation class for Entity: Employee. 
+- **EmployeeService.java** used for creating the _EntityManagerFactory_,_EntityManager_ and _EntityTransaction_. 
+- _persistence.xml_ acts as the glue between entity classes and the entity manager.
 
  
 ## Explanation Other Important Points
 
-- To be defined. 
+- entityManagerFactory.createEntityManager()--->create entity manager. entityManager.getTransaction()---> creates transaction. entityTransaction.begin() ---> begins the transaction, CRUD operations are performed. entityTransaction.commit() commits the transaction. entityManager.close()---> ecloses the entity manager.
+- _<persistence-unit name="employee">_ defined in persistence.xml is referenced in the EmployeeService class.
+- _jdbc.driver_, _jdbc.url_, _jdbc.user_ and _jdbc.password_ are defined in persistence.xml.
+
+- JPA Facet project ?
+- Problems with BuildPath ?
 
 
 
@@ -95,9 +101,7 @@ PRIMARY KEY (`id`)
 
 - To be defined.
 
-## Commands
 
-- To be defined.
 
 ## Contribution
 

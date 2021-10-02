@@ -41,7 +41,13 @@ The following diagram depicts the Eclipselink Runtime Architecture:
 
 ## Explanation EntityManager
 
-- To be defined. 
+An entity manager is used to interact with the persistence context. An entity manager is used to read, delete and write an entity. The Entity Manager API is used 
+
+- to create and  remove persistent entity instances, 
+- to find entities by their primary key, and
+- to query over entities. 
+
+A **Persistence Context** is a setg of entity instances in which there is a unique entity instance for any persistent entity identity. Within the persistence context, the entity instance and their life cycles are managed. 
 
 
  
